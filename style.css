@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #2d3748;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header .subtitle {
+  font-size: 1.1rem;
+  color: #a0aec0;
+}
+
+main {
+  flex: 1;
+  padding: 50px 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.avatar {
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.card .role {
+  font-size: 0.85rem;
+  color: #718096;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card .bio {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #2d3748;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #4a5568;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2d3748;
+  color: #a0aec0;
+  font-size: 0.85rem;
+}
